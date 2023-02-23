@@ -1,0 +1,4 @@
+.imgGrid {
+  display: flex;
+  flex-direction: column;
+}
