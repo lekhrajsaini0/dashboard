@@ -1,0 +1,31 @@
+.response {
+  width: 955px;
+  height: 386px;
+  padding: 25px;
+
+  background: linear-gradient(180deg, #1a1a1a 0%, rgba(26, 26, 26, 0.6) 100%);
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekly {
+  display: flex;
+  align-items: center;
+}
+
+.header,
+.weekly h4 {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* text-align: right; */
+}

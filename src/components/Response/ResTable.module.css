@@ -1,0 +1,50 @@
+.resTable {
+  width: 100%;
+
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #aeabd8;
+}
+.tabHead {
+  text-align: start;
+  padding: 14px 0 9px 0;
+}
+
+.data {
+  padding: 10px 0;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hrBorder {
+  border: 1px solid rgba(174, 171, 216, 0.2);
+}
+
+.approve {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  
+  padding: 10px 0;
+
+  color: #02b15a;
+}
+
+.pending {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px 0;
+
+  color: #ffbd5b;
+}
