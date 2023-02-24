@@ -6,6 +6,7 @@ import icon from "../../assets/icons/Group 1000002375.svg";
 import icon1 from "../../assets/icons/Group 1000002376.svg";
 import icon2 from "../../assets/icons/Group 1000002377.svg";
 import icon3 from "../../assets/icons/searchnormal1.svg";
+import Analytics from "../Analytics/Analytics";
 
 const DashNavbar = () => {
   return (
@@ -52,6 +53,7 @@ const DashNavbar = () => {
       </div>
 
       <hr className={styles.border} />
+      <Analytics></Analytics>
     </div>
   );
 };

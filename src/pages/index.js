@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import DashNavbar from "@/components/DashNavbar/DashNavbar";
+import Analytics from "@/components/Analytics/Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,11 @@ export default function Home() {
       <main className={styles.main}>
         <Sidebar></Sidebar>
         <DashNavbar></DashNavbar>
+        <div>
+          {/* <div className={styles.dashDiv}>
+            <Analytics></Analytics>
+          </div> */}
+        </div>
       </main>
     </>
   );
