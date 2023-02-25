@@ -8,6 +8,7 @@ import icon2 from "../../assets/icons/Group 1000002377.svg";
 import icon3 from "../../assets/icons/searchnormal1.svg";
 import Analytics from "../Analytics/Analytics";
 import Invitation from "@/pages/invitationCode/Invitation";
+import Subscription from "@/pages/subscription/Subscription";
 
 const DashNavbar = () => {
   return (
@@ -54,7 +55,8 @@ const DashNavbar = () => {
       </div>
 
       <hr className={styles.border} />
-      <Invitation></Invitation>
+      <Subscription></Subscription>
+      {/* <Invitation></Invitation> */}
       {/* <Analytics></Analytics> */}
     </div>
   );
