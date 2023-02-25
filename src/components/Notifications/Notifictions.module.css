@@ -1,0 +1,43 @@
+.notification {
+  margin-bottom: 28px;
+  background: linear-gradient(180deg, #1a1a1a 0%, rgba(26, 26, 26, 0.6) 100%);
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 36px;
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.notificationDiv {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+
+  color: #ffffff;
+  margin: 64px 45px;
+}
+
+.dataBox {
+  height: 20px;
+  width: 20px;
+  margin-right: 43px;
+  border: 2px solid #ffffff;
+}

@@ -9,6 +9,7 @@ import icon3 from "../../assets/icons/searchnormal1.svg";
 import Analytics from "../Analytics/Analytics";
 import Invitation from "@/pages/invitationCode/Invitation";
 import Subscription from "@/pages/subscription/Subscription";
+import Notification from "@/pages/notification/Notification";
 
 const DashNavbar = () => {
   return (
@@ -55,7 +56,8 @@ const DashNavbar = () => {
       </div>
 
       <hr className={styles.border} />
-      <Subscription></Subscription>
+      <Notification></Notification>
+      {/* <Subscription></Subscription> */}
       {/* <Invitation></Invitation> */}
       {/* <Analytics></Analytics> */}
     </div>
