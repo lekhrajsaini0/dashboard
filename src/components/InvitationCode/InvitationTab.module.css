@@ -1,0 +1,79 @@
+.tab tr {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: linear-gradient(180deg, #1a1a1a 0%, rgba(26, 26, 26, 0.6) 100%);
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.tabHeadTr {
+  margin-bottom: 28px;
+}
+
+.message {
+    /* max-width: 800px; */
+  /* overflow-y: hidden; */
+  /* text-overflow: ellipsis; */
+  /* background: linear-gradient(to left, #333, #333 50%, #eee 55%, #333 75%); */
+  /* background: linear-gradient(270deg, #1A1A1A 0%, rgba(26, 26, 26, 0.28) 100%); */
+}
+
+.tabRow {
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tabHead {
+  text-align: start;
+  padding: 21px 41px 21px 86px;
+}
+
+.dataBox {
+  height: 20px;
+  width: 20px;
+  margin-right: 43px;
+  border: 2px solid #ffffff;
+}
+
+.approved {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+
+  color: #6cffb6;
+}
+
+.pending {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+
+  color: #ffcc7f;
+}
+
+.denied {
+  font-family: "General Sans Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+
+  color: #ff7777;
+}

@@ -1,5 +1,8 @@
 .main {
   display: flex;
+  /* display: grid; */
+  /* grid-template-columns: 2 1fr; */
+  /* float: left; */
   /* flex-direction: column; */
   /* justify-content: space-between; */
   /* align-items: center; */

@@ -1,3 +1,8 @@
+.sideFix {
+  /* position: fixed; */
+  /* left: 0; */
+}
+
 .imgFlex {
   display: flex;
   flex-direction: column;

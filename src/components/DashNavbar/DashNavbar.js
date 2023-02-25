@@ -7,6 +7,7 @@ import icon1 from "../../assets/icons/Group 1000002376.svg";
 import icon2 from "../../assets/icons/Group 1000002377.svg";
 import icon3 from "../../assets/icons/searchnormal1.svg";
 import Analytics from "../Analytics/Analytics";
+import Invitation from "@/pages/invitationCode/Invitation";
 
 const DashNavbar = () => {
   return (
@@ -53,7 +54,8 @@ const DashNavbar = () => {
       </div>
 
       <hr className={styles.border} />
-      <Analytics></Analytics>
+      <Invitation></Invitation>
+      {/* <Analytics></Analytics> */}
     </div>
   );
 };

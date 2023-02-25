@@ -1,5 +1,7 @@
 .navDiv {
   width: 100vw;
+  /* position: relative; */
+
 }
 .navFlex {
   display: flex;
