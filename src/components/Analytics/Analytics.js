@@ -8,6 +8,7 @@ import iconDown from "../../assets/icons/Frame 1000002320.svg";
 import iconPlus from "../../assets/icons/Group 1000002333.svg";
 import Response from "../Response/Response";
 import BarChart from "../BarChart/BarChart";
+import PieChart from "../Chart/PieChart";
 
 const Analytics = () => {
   return (
@@ -16,7 +17,7 @@ const Analytics = () => {
       <div className={styles.chartRes}>
         {/* chart */}
         <div className={styles.chart}>
-          <div className={styles.pie}></div>
+          <PieChart />
           {/* views and analytic */}
           <div className={styles.analyticsDiv}>
             {/* viewers */}
