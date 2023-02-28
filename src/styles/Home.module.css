@@ -1,5 +1,7 @@
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+    /* font-family: var(--font-mono); */
   /* display: grid; */
   /* grid-template-columns: 2 1fr; */
   /* float: left; */
@@ -9,10 +11,6 @@
   /* padding: 6rem; */
   /* min-height: 100vh; */
 }
-
-/* .dashDiv {
-  margin: 66px 22px 20px 22px;
-} */
 
 .description {
   display: inherit;

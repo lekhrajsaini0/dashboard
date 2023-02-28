@@ -19,11 +19,6 @@ export default function Home() {
       <main className={styles.main}>
         <Sidebar></Sidebar>
         <DashNavbar></DashNavbar>
-        <div>
-          {/* <div className={styles.dashDiv}>
-            <Analytics></Analytics>
-          </div> */}
-        </div>
       </main>
     </>
   );

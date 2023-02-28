@@ -6,10 +6,10 @@ import icon from "../../assets/icons/Group 1000002375.svg";
 import icon1 from "../../assets/icons/Group 1000002376.svg";
 import icon2 from "../../assets/icons/Group 1000002377.svg";
 import icon3 from "../../assets/icons/searchnormal1.svg";
-import Analytics from "../Analytics/Analytics";
 import Invitation from "@/pages/invitationCode/Invitation";
 import Subscription from "@/pages/subscription/Subscription";
 import Notification from "@/pages/notification/Notification";
+import Analytic from "@/pages/analytic/Analytic";
 
 const DashNavbar = () => {
   return (
@@ -56,10 +56,10 @@ const DashNavbar = () => {
       </div>
 
       <hr className={styles.border} />
-      <Notification></Notification>
+      {/* <Notification></Notification> */}
       {/* <Subscription></Subscription> */}
       {/* <Invitation></Invitation> */}
-      {/* <Analytics></Analytics> */}
+      <Analytic></Analytic>
     </div>
   );
 };

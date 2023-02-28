@@ -1,8 +1,9 @@
-.navDiv {
+/* .navDiv {
   width: 100vw;
-  /* position: relative; */
+  position: relative;
 
-}
+} */
+
 .navFlex {
   display: flex;
   justify-items: center;
