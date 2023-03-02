@@ -24,7 +24,7 @@
 }
 
 .tab {
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -46,7 +46,7 @@
 }
 
 .approved {
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -57,7 +57,7 @@
 }
 
 .pending {
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -68,7 +68,7 @@
 }
 
 .denied {
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 500;
   font-size: 24px;

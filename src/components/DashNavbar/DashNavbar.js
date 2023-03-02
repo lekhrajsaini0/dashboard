@@ -10,7 +10,6 @@ import Invitation from "@/pages/invitationCode/Invitation";
 import Subscription from "@/pages/subscription/Subscription";
 import Notification from "@/pages/notification/Notification";
 import Analytic from "@/pages/analytic/Analytic";
-import ChartBar from "../Chart/ChartBar";
 
 const DashNavbar = () => {
   return (
@@ -60,8 +59,7 @@ const DashNavbar = () => {
       {/* <Notification></Notification> */}
       {/* <Subscription></Subscription> */}
       {/* <Invitation></Invitation> */}
-      <Analytic></Analytic>
-      {/* <ChartBar/> */}
+      {/* <Analytic></Analytic> */}
     </div>
   );
 };

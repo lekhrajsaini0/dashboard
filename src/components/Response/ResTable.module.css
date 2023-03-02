@@ -1,7 +1,7 @@
 .resTable {
   width: 100%;
 
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -27,7 +27,7 @@
 }
 
 .approve {
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -39,7 +39,7 @@
 }
 
 .pending {
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

@@ -25,10 +25,10 @@
   width: 97px;
   height: 22px;
 
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   /* identical to box height */
 
@@ -39,7 +39,7 @@
   width: 85px;
   height: 32px;
 
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
