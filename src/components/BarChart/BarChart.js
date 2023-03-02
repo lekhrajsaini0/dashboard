@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import icon from "../../assets/icons/Group 1000002332.svg";
 import styles from "./BarChart.module.css";
+import ChartBar from "../Chart/ChartBar";
 
 const BarChart = () => {
   return (
@@ -19,7 +20,8 @@ const BarChart = () => {
           />
         </div>
       </div>
-      <h1>Analytics</h1>
+      <h2>Analytics</h2>
+      <ChartBar />
     </div>
   );
 };

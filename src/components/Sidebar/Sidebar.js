@@ -14,7 +14,7 @@ import icon7 from "../../assets/icons/Frame 10.svg";
 const Sidebar = () => {
   return (
     <div className={styles.main}>
-      <nav class={styles.mainMenu}>
+      <nav className={styles.mainMenu}>
         <div className={styles.sideFlex}>
           <div className={styles.imgFlex}>
             <div className={styles.iconFlex}>
