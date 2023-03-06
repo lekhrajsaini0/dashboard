@@ -59,7 +59,7 @@ const DashNavbar = () => {
       {/* <Notification></Notification> */}
       {/* <Subscription></Subscription> */}
       {/* <Invitation></Invitation> */}
-      {/* <Analytic></Analytic> */}
+      <Analytic></Analytic>
     </div>
   );
 };
