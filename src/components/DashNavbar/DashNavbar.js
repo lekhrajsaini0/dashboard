@@ -10,12 +10,14 @@ import Invitation from "@/pages/invitationCode/Invitation";
 import Subscription from "@/pages/subscription/Subscription";
 import Notification from "@/pages/notification/Notification";
 import Analytic from "@/pages/analytic/Analytic";
+import useTitle from "@/hooks/useTitle";
 
 const DashNavbar = () => {
+  useTitle("Dashboard Overview");
   return (
     <div className={styles.navDiv}>
       <div className={styles.navFlex}>
-        <h1>Dashboard Overview</h1>
+        <h1 id="navTitle">Dashboard Overview</h1>
         <div className={styles.iconDiv}>
           <div className={styles.inputDiv}>
             <Image
