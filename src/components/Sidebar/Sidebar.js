@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Sidebar.module.css";
 
@@ -10,6 +10,8 @@ import icon4 from "../../assets/icons/Box (2).svg";
 import icon5 from "../../assets/icons/Box (1).svg";
 import icon6 from "../../assets/icons/Box.svg";
 import icon7 from "../../assets/icons/Frame 10.svg";
+import darkIcon from "../../assets/icons/Group 1000002329 (2).svg";
+import lightIcon from "../../assets/icons/Group 1000002329 (1).svg";
 import Link from "next/link";
 
 const navs = [
@@ -46,6 +48,7 @@ const navs = [
 ];
 
 const Sidebar = () => {
+  const [dark, setDark] = useState(true);
   return (
     <div className={styles.main}>
       <nav className={styles.mainMenu}>
@@ -66,15 +69,36 @@ const Sidebar = () => {
               </Link>
             ))}
             <hr className={styles.border} />
-            <div className={styles.iconFlex}>
-              <Image
-                priority
-                src={icon6}
-                height={48}
-                width={48}
-                alt="Follow us on Twitter"
-              />
-              <h4>Dark Mode</h4>
+            <div className={styles.darkMode}>
+              <div className={styles.iconFlex}>
+                <Image
+                  priority
+                  src={icon6}
+                  height={48}
+                  width={48}
+                  alt="Follow us on Twitter"
+                />
+                <h4>Dark Mode</h4>
+              </div>
+              {dark === true ? (
+                <Image
+                  priority
+                  src={darkIcon}
+                  height={48}
+                  width={48}
+                  alt="Follow us on Twitter"
+                  onClick={() => setDark(false)}
+                />
+              ) : (
+                <Image
+                  priority
+                  src={lightIcon}
+                  height={48}
+                  width={48}
+                  alt="Follow us on Twitter"
+                  onClick={() => setDark(true)}
+                />
+              )}
             </div>
           </div>
           <div className={styles.iconFlex}>
