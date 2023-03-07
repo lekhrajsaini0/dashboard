@@ -20,7 +20,7 @@ const Response = () => {
           />
         </div>
       </div>
-      <ResTable/>
+      <ResTable />
     </div>
   );
 };

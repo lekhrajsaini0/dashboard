@@ -1,12 +1,14 @@
-import Notifications from '@/components/Notifications/Notifications';
-import React from 'react';
+import Notifications from "@/components/Notifications/Notifications";
+import useTitle from "@/hooks/useTitle";
+import React from "react";
 
 const Notification = () => {
-    return (
-        <div>
-           <Notifications/> 
-        </div>
-    );
+  useTitle("Notification");
+  return (
+    <div>
+      <Notifications />
+    </div>
+  );
 };
 
 export default Notification;

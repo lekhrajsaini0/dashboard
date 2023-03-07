@@ -1,11 +1,14 @@
-import React from 'react';
+import TeamAll from "@/components/Team/TeamAll";
+import useTitle from "@/hooks/useTitle";
+import React from "react";
 
 const team = () => {
-    return (
-        <div>
-            <h1>This is team</h1>
-        </div>
-    );
+  useTitle("Team");
+  return (
+    <div>
+      <TeamAll />
+    </div>
+  );
 };
 
 export default team;

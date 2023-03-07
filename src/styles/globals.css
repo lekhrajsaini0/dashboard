@@ -42,7 +42,7 @@
 
 .common {
   display: grid;
-  grid-template-columns: 1fr 12fr;
+  grid-template-columns: 1fr 11fr;
 }
 
 @media (prefers-color-scheme: dark) {

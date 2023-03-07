@@ -1,0 +1,19 @@
+/* .main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.gridItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamGrid {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:38px;
+  margin: auto;
+}

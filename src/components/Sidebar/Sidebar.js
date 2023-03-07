@@ -52,18 +52,18 @@ const Sidebar = () => {
         <div className={styles.sideFlex}>
           <div className={styles.imgFlex}>
             {navs.map((nav, i) => (
-              <div className={styles.iconFlex} key={i}>
-                <Image
-                  priority
-                  src={nav.image}
-                  height={48}
-                  width={48}
-                  alt="Follow us on Twitter"
-                />
-                <Link href={nav.navLink}>
+              <Link href={nav.navLink} key={i}>
+                <div className={styles.iconFlex}>
+                  <Image
+                    priority
+                    src={nav.image}
+                    height={48}
+                    width={48}
+                    alt="Follow us on Twitter"
+                  />
                   <h4>{nav.name}</h4>
-                </Link>
-              </div>
+                </div>
+              </Link>
             ))}
             <hr className={styles.border} />
             <div className={styles.iconFlex}>
@@ -81,10 +81,11 @@ const Sidebar = () => {
             <Image
               priority
               src={icon7}
-              height={20}
-              width={38}
+              height={30}
+              width={30}
               alt="Follow us on Twitter"
             />
+            <h4>Logout</h4>
           </div>
         </div>
       </nav>

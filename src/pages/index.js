@@ -21,10 +21,6 @@ export default function Home() {
       </Head>
       <main className={open_sans.className}>
         <Analytics />
-        {/* <div className={styles.main}>
-          <Sidebar />
-          <DashNavbar />
-        </div> */}
       </main>
     </>
   );
