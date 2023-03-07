@@ -6,14 +6,8 @@ import icon from "../../assets/icons/Group 1000002375.svg";
 import icon1 from "../../assets/icons/Group 1000002376.svg";
 import icon2 from "../../assets/icons/Group 1000002377.svg";
 import icon3 from "../../assets/icons/searchnormal1.svg";
-import Invitation from "@/pages/invitationCode/Invitation";
-import Subscription from "@/pages/subscription/Subscription";
-import Notification from "@/pages/notification/Notification";
-import Analytic from "@/pages/analytic/Analytic";
-import useTitle from "@/hooks/useTitle";
 
 const DashNavbar = () => {
-  useTitle("Dashboard Overview");
   return (
     <div className={styles.navDiv}>
       <div className={styles.navFlex}>
@@ -61,7 +55,7 @@ const DashNavbar = () => {
       {/* <Notification></Notification> */}
       {/* <Subscription></Subscription> */}
       {/* <Invitation></Invitation> */}
-      <Analytic></Analytic>
+      {/* <Analytic></Analytic> */}
     </div>
   );
 };

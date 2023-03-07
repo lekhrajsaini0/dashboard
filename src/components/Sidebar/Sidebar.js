@@ -10,6 +10,40 @@ import icon4 from "../../assets/icons/Box (2).svg";
 import icon5 from "../../assets/icons/Box (1).svg";
 import icon6 from "../../assets/icons/Box.svg";
 import icon7 from "../../assets/icons/Frame 10.svg";
+import Link from "next/link";
+
+const navs = [
+  {
+    name: "Dashboard",
+    image: icon,
+    navLink: "/",
+  },
+  {
+    name: "Invitation Code",
+    image: icon1,
+    navLink: "/invitation",
+  },
+  {
+    name: "Subscription",
+    image: icon2,
+    navLink: "/subscription",
+  },
+  {
+    name: "Notification",
+    image: icon3,
+    navLink: "/notification",
+  },
+  {
+    name: "Currated",
+    image: icon4,
+    navLink: "/currated",
+  },
+  {
+    name: "Team",
+    image: icon5,
+    navLink: "/team",
+  },
+];
 
 const Sidebar = () => {
   return (
@@ -17,66 +51,20 @@ const Sidebar = () => {
       <nav className={styles.mainMenu}>
         <div className={styles.sideFlex}>
           <div className={styles.imgFlex}>
-            <div className={styles.iconFlex}>
-              <Image
-                priority
-                src={icon}
-                height={48}
-                width={48}
-                alt="Follow us on Twitter"
-              />
-              <h4>Dashboard</h4>
-            </div>
-            <div className={styles.iconFlex}>
-              <Image
-                priority
-                src={icon1}
-                height={48}
-                width={48}
-                alt="Follow us on Twitter"
-              />
-              <h4>Invitation Code</h4>
-            </div>
-            <div className={styles.iconFlex}>
-              <Image
-                priority
-                src={icon2}
-                height={48}
-                width={48}
-                alt="Follow us on Twitter"
-              />
-              <h4>Subscription</h4>
-            </div>
-            <div className={styles.iconFlex}>
-              <Image
-                priority
-                src={icon3}
-                height={48}
-                width={48}
-                alt="Follow us on Twitter"
-              />
-              <h4>Notification</h4>
-            </div>
-            <div className={styles.iconFlex}>
-              <Image
-                priority
-                src={icon4}
-                height={48}
-                width={48}
-                alt="Follow us on Twitter"
-              />
-              <h4>Currated</h4>
-            </div>
-            <div className={styles.iconFlex}>
-              <Image
-                priority
-                src={icon5}
-                height={48}
-                width={48}
-                alt="Follow us on Twitter"
-              />
-              <h4>Team</h4>
-            </div>
+            {navs.map((nav, i) => (
+              <div className={styles.iconFlex} key={i}>
+                <Image
+                  priority
+                  src={nav.image}
+                  height={48}
+                  width={48}
+                  alt="Follow us on Twitter"
+                />
+                <Link href={nav.navLink}>
+                  <h4>{nav.name}</h4>
+                </Link>
+              </div>
+            ))}
             <hr className={styles.border} />
             <div className={styles.iconFlex}>
               <Image
