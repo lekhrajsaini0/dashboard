@@ -13,6 +13,7 @@ import icon7 from "../../assets/icons/Frame 10.svg";
 import darkIcon from "../../assets/icons/Group 1000002329 (2).svg";
 import lightIcon from "../../assets/icons/Group 1000002329 (1).svg";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const navs = [
   {
@@ -49,13 +50,22 @@ const navs = [
 
 const Sidebar = () => {
   const [dark, setDark] = useState(true);
+  const router = useRouter();
+  console.log(router.asPath);
+
   return (
     <div className={styles.main}>
       <nav className={styles.mainMenu}>
         <div className={styles.sideFlex}>
           <div className={styles.imgFlex}>
             {navs.map((nav, i) => (
-              <Link href={nav.navLink} key={i}>
+              <Link
+                href={nav.navLink}
+                key={i}
+                className={
+                  router.asPath === `${nav.navLink}` ? `${styles.active}` : ""
+                }
+              >
                 <div className={styles.iconFlex}>
                   <Image
                     priority

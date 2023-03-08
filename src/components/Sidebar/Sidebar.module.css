@@ -4,6 +4,11 @@ nav.mainMenu.expanded {
   overflow: visible;
 }
 
+.active {
+  background: #6359e9;
+  border-radius: 10px;
+}
+
 .mainMenu {
   background: #212121;
   position: absolute;
@@ -11,7 +16,7 @@ nav.mainMenu.expanded {
   bottom: 0;
   height: 100%;
   left: 0;
-  width: 8vw;
+  width: 120px;
   overflow: hidden;
   transition: left 0.4s ease-in-out;
   -o-transition: left 0.4s ease-in-out;
@@ -38,7 +43,7 @@ nav.mainMenu.expanded {
   /* font-family: "Titillium Web", sans-serif; */
 }
 
-#slide {
+/* #slide {
   position: fixed;
   background: #999;
   left: -200px;
@@ -47,7 +52,7 @@ nav.mainMenu.expanded {
   -ms-transition: left 0.4s ease-in-out;
   -moz-transition: left 0.4s ease-in-out;
   -webkit-transition: left 0.4s ease-in-out;
-}
+} */
 
 .darkMode {
   display: flex;
