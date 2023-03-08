@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import styles from "./Edit.module.css";
 import img from "../../assets/image/AK_2022_11_08_309 (2).png";
 
-const Edit = () => {
+const Edit = ({ data }) => {
   const {
     register,
     handleSubmit,
@@ -14,13 +14,14 @@ const Edit = () => {
 
   return (
     <div className={styles.main}>
-      <h1>Edit Member</h1>
+      <h1 className={styles.members}>Edit Member</h1>
       <div className={styles.editForm}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.formMain}>
             <Image
               priority
               src={img}
+              alt="user image"
               width={290}
               height={358.6}
               className={styles.editImg}
@@ -31,7 +32,7 @@ const Edit = () => {
                   <label className={styles.labelField}>Edit Name</label>
                   <input
                     type="text"
-                    value="Aanchal Kalra"
+                    placeholder={data.name}
                     {...register("name", { required: true })}
                     className={styles.halfField}
                   />
@@ -41,7 +42,7 @@ const Edit = () => {
                   <label className={styles.labelField}>Edit Title</label>
                   <input
                     type="text"
-                    value="Founder"
+                    placeholder={data.position}
                     {...register("title", { required: true })}
                     className={styles.halfField}
                   />
@@ -52,7 +53,7 @@ const Edit = () => {
                 <label className={styles.labelField}>Edit Email</label>
                 <input
                   type="email"
-                  value="aanchal@apostrfy.com"
+                  placeholder="aanchal@apostrfy.com"
                   {...register("email", { required: true })}
                   className={styles.fullField}
                 />
@@ -62,7 +63,7 @@ const Edit = () => {
                 <label className={styles.labelField}>Edit Quote</label>
                 <input
                   type="text"
-                  value="They couldn't get me to pose without my kids."
+                  placeholder="They couldn't get me to pose without my kids."
                   {...register("quote", { required: true })}
                   className={styles.fullField}
                 />

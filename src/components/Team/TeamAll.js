@@ -17,17 +17,17 @@ const members = [
   {
     name: "Aanchal Kalra",
     image: img,
-    position: "Founder",
+    position: "Web Developer",
   },
   {
     name: "Aanchal Kalra",
     image: img,
-    position: "Founder",
+    position: "App developer",
   },
   {
     name: "Aanchal Kalra",
     image: img,
-    position: "Founder",
+    position: "HR",
   },
   {
     name: "Aanchal Kalra",
@@ -49,6 +49,7 @@ const members = [
 const TeamAll = () => {
   return (
     <div className={styles.main}>
+      <h1 className={styles.members}>{members.length} Members</h1>
       <div className={styles.teamGrid}>
         {members.map((member, i) => (
           <div key={i} className={styles.gridItem}>

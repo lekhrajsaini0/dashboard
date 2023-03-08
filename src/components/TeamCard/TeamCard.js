@@ -14,7 +14,17 @@ const TeamCard = ({ image, name, position }) => {
       />
       <h1 className={styles.name}>{name}</h1>
       <h4 className={styles.position}>{position}</h4>
-      <Link className={styles.edit} href="/editInfo">
+      <Link
+        href={{
+          pathname: "/editInfo",
+          query: {
+            image: image,
+            name: name,
+            position: position,
+          },
+        }}
+        className={styles.edit}
+      >
         Edit
       </Link>
     </div>

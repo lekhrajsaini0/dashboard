@@ -52,10 +52,6 @@ const DashNavbar = () => {
       </div>
 
       <hr className={styles.border} />
-      {/* <Notification></Notification> */}
-      {/* <Subscription></Subscription> */}
-      {/* <Invitation></Invitation> */}
-      {/* <Analytic></Analytic> */}
     </div>
   );
 };

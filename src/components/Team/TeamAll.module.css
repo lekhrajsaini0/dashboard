@@ -1,8 +1,6 @@
-/* .main{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.main {
+  margin-top: 50px;
+}
 
 .gridItem {
   display: flex;
@@ -14,6 +12,12 @@
   width: 60vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap:38px;
+  gap: 38px;
   margin: auto;
+}
+
+.members {
+  margin-top: 50px;
+  margin-bottom: 71px;
+  margin-left: 250px;
 }

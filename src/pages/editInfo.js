@@ -1,17 +1,17 @@
 import Edit from "@/components/Edit/Edit";
 import useTitle from "@/hooks/useTitle";
-import React, { useState } from "react";
+import { useRouter } from "next/router";
+import React from "react";
 
 const editInfo = () => {
   useTitle("Team");
+  const router = useRouter();
 
-  const [name, setName] = useState("");
-  const [title, setTitle] = useState("");
-  const [email, setEmail] = useState("");
-  const [quote, setQuote] = useState("");
+  const data = router.query;
+
   return (
     <div>
-      <Edit />
+      <Edit data={data} />
     </div>
   );
 };

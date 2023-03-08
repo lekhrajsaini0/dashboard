@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Sidebar.module.css";
 
-import icon from "../../assets/icons/Box (6).svg";
-import icon1 from "../../assets/icons/Box (5).svg";
-import icon2 from "../../assets/icons/Box (4).svg";
-import icon3 from "../../assets/icons/Box (3).svg";
-import icon4 from "../../assets/icons/Box (2).svg";
-import icon5 from "../../assets/icons/Box (1).svg";
-import icon6 from "../../assets/icons/Box.svg";
+import icon from "../../assets/icons/Frame 1.svg";
+import icon1 from "../../assets/icons/smstracking.svg";
+import icon2 from "../../assets/icons/directboxnotif.svg";
+import icon3 from "../../assets/icons/notification.svg";
+import icon4 from "../../assets/icons/notepad2.svg";
+import icon5 from "../../assets/icons/profile2user.svg";
+import icon6 from "../../assets/icons/Vector.svg";
 import icon7 from "../../assets/icons/Frame 10.svg";
 import darkIcon from "../../assets/icons/Group 1000002329 (2).svg";
 import lightIcon from "../../assets/icons/Group 1000002329 (1).svg";
@@ -51,7 +51,6 @@ const navs = [
 const Sidebar = () => {
   const [dark, setDark] = useState(true);
   const router = useRouter();
-  console.log(router.asPath);
 
   return (
     <div className={styles.main}>
@@ -70,8 +69,8 @@ const Sidebar = () => {
                   <Image
                     priority
                     src={nav.image}
-                    height={48}
-                    width={48}
+                    height={28}
+                    width={28}
                     alt="Follow us on Twitter"
                   />
                   <h4>{nav.name}</h4>
@@ -84,8 +83,8 @@ const Sidebar = () => {
                 <Image
                   priority
                   src={icon6}
-                  height={48}
-                  width={48}
+                  height={28}
+                  width={28}
                   alt="Follow us on Twitter"
                 />
                 <h4>Dark Mode</h4>

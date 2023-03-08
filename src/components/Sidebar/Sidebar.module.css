@@ -5,6 +5,13 @@ nav.mainMenu.expanded {
 }
 
 .active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0 10px 6px;
+  height: 40px;
+
   background: #6359e9;
   border-radius: 10px;
 }
@@ -40,19 +47,7 @@ nav.mainMenu.expanded {
   display: table-cell;
   vertical-align: middle;
   width: 190px;
-  /* font-family: "Titillium Web", sans-serif; */
 }
-
-/* #slide {
-  position: fixed;
-  background: #999;
-  left: -200px;
-  transition: left 0.4s ease-in-out;
-  -o-transition: left 0.4s ease-in-out;
-  -ms-transition: left 0.4s ease-in-out;
-  -moz-transition: left 0.4s ease-in-out;
-  -webkit-transition: left 0.4s ease-in-out;
-} */
 
 .darkMode {
   display: flex;
@@ -63,12 +58,13 @@ nav.mainMenu.expanded {
   display: flex;
   align-items: center;
   gap: 55px;
+  /* margin-bottom: 10px; */
 }
 
 .imgFlex {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 18px;
 }
 
 .border {
